@@ -10,4 +10,3 @@ class SavonApiApplication
 fun main(args: Array<String>) {
     runApplication<SavonApiApplication>(*args)
 }
-    
