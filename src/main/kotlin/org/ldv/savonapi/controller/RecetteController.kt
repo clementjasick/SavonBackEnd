@@ -98,4 +98,9 @@ class RecetteController(
             ResponseEntity.notFound().build()
         }
     }
+    @DeleteMapping("/all")
+    fun deleteAll(): ResponseEntity<Void> {
+        recetteDAO.deleteAll()
+        return ResponseEntity.noContent().build()
+    }
 }
